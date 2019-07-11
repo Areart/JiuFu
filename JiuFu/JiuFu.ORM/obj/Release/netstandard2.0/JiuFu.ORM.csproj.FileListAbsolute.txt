@@ -1,0 +1,14 @@
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.ORM.deps.json
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.ORM.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.ORM.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.Entities.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.UserAndRole.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.Entities.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\bin\Release\netstandard2.0\JiuFu.UserAndRole.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ORM\obj\Release\netstandard2.0\JiuFu.ORM.pdb

@@ -1,0 +1,43 @@
+﻿@model JiuFu.Entities.Goods
+
+@{
+    ViewData["Title"] = "GoodsDetails";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>GoodsDetails</h1>
+
+<div>
+    <h4>Goods</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+           名称
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+           价格
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+           详细
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Detail)
+        </dd>
+        <dt class = "col-sm-2">
+           图片
+        </dt>
+        <dd class = "col-sm-10">
+          <img src="@Html.DisplayFor(model => model.picture)"/>  
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="GoodsEdit" asp-route-id="@Model.Id">修改</a> |
+    <a asp-action="GoodsIndex">返回</a>
+</div>

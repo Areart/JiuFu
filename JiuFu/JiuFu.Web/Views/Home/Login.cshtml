@@ -1,0 +1,64 @@
+﻿@model JiuFu.ViewModels.LoginVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>登录</title>
+
+    <link rel="stylesheet" href="~/css/bootstarpcss/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstarpcss/FoodStyle.css">
+    <link rel="stylesheet" href="~/css/bootstarpcss/LoginCSS.css">
+</head>
+<body>
+    <div class="container" style="height:100%">
+        <div class="row" style="height:100%">
+            <form asp-action="Login" id="loginForm">
+                <div class="col-xs-12" id="Longin">
+                    <div class="input-group" id="Longintext">
+                        <input asp-for="UserName" type="text" class="form-control" placeholder="账号" style="  border-radius: 5px;">
+                    </div><br>
+                    <div class="input-group" id="Longintext">
+                        <input asp-for="Password" type="password" class="form-control" placeholder="密码" style="  border-radius: 5px;">
+                    </div><br>
+                </div>
+                <div class="col-xs-12">
+                    <div class="radio" style="display: block;text-align: center;">
+                        <label>
+                            <input asp-for="UserRole" type="radio" name="UserRole" id="optionsRadios1" value="普通注册用户" checked>用户
+                        </label>
+                        <label>
+                            <input asp-for="UserRole" type="radio" name="UserRole" id="optionsRadios1" value="option1">厨师
+                        </label>
+                        <label>
+                            <input asp-for="UserRole" type="radio" name="UserRole" id="optionsRadios1" value="option1">服务员
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top:20px;">
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-6" style="margin:0 auto;">
+                        <div class="btn-group btn-group-justified">
+                            <a  onclick="document:loginForm.submit()"  class="btn btn-primary">登录</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3"></div>
+                </div>
+            </form>
+            <div class="col-xs-12" style="text-align: center;margin-top:30px;">
+                <a asp-action="Register" asp-controller="Home">注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="~/css/bootstarpcss/jquery-1.12.4.js"></script>
+    <script src="~/css/bootstarpcss/bootstrap.min.js"></script>
+</body>
+</html>

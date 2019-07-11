@@ -1,0 +1,57 @@
+﻿@model JiuFu.ViewModels.UserAdd
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>注册</title>
+
+    <link rel="stylesheet" href="~/css/bootstarpcss/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstarpcss/FoodStyle.css">
+    <link rel="stylesheet" href="~/css/bootstarpcss/LoginCSS.css">
+</head>
+<body>
+    <div class="container" style="height:100%">
+        <div class="row" style="height:100%">
+            <form asp-action="Register" id="loginForm">
+                <div class="col-xs-12" id="Longin">
+                    <div class="input-group" id="Longintext">
+                        <div class="input-group" id="Longintext">
+                            <input asp-for="Email" type="text" class="form-control" placeholder="邮箱" style="  border-radius: 5px;">
+                        </div><br>
+                        <div class="input-group" id="Longintext">
+                            <input asp-for="MobileNumber" type="text" class="form-control" placeholder="手机号" style="  border-radius: 5px;">
+                        </div><br>
+                        <input asp-for="UserName" type="text" class="form-control" placeholder="账号" style="  border-radius: 5px;">
+                    </div><br>
+                    <div class="input-group" id="Longintext">
+                        <input asp-for="Password" type="password" class="form-control" placeholder="密码" style="  border-radius: 5px;">
+                    </div><br>
+                    <div class="input-group" id="Longintext">
+                        <input asp-for="PasswordComfirm" type="password" class="form-control" placeholder="确认密码" style="  border-radius: 5px;">
+                    </div><br>
+                </div>
+                <div class="col-xs-12" style="margin-top:20px;">
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-6" style="margin:0 auto;">
+                        <div class="btn-group btn-group-justified">
+                            <a onclick="document:loginForm.submit()" class="btn btn-primary">注册</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="~/css/bootstarpcss/jquery-1.12.4.js"></script>
+    <script src="~/css/bootstarpcss/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿@model JiuFu.Entities.Laundry
+
+@{
+    ViewData["Title"] = "LaundryDetails";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>洗衣详细</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+          方式
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mode)
+        </dd>
+        <dt class = "col-sm-2">
+           价格
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="LaundryEdit" asp-route-id="@Model.Id">修改</a> |
+    <a asp-action="LaundryIndex">返回</a>
+</div>

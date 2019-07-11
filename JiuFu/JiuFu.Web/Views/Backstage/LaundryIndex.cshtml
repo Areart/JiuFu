@@ -1,0 +1,46 @@
+﻿@model IEnumerable<JiuFu.Entities.Laundry>
+
+@{
+    ViewData["Title"] = "LaundryIndex";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+<div class="inbox-head col-lg-12">
+    <h3 class="input-text">洗衣管理</h3>
+    <form asp-action="LaundryIndex" class="pull-right position">
+        <div class="input-append inner-append">
+            <input type="text" class="sr-input" name="SearchString" placeholder="搜索">
+            <button class="btn sr-btn append-btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                方式
+            </th>
+            <th>
+                价格
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <a asp-action="LaundryEdit" asp-route-id="@item.Id">修改</a> |
+                    <a asp-action="LaundryDetails" asp-route-id="@item.Id">详细</a> |
+                    <a asp-action="LaundryDelete" asp-route-id="@item.Id">删除</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

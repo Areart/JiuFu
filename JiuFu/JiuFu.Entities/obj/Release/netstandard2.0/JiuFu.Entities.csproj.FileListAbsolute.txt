@@ -1,0 +1,12 @@
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\bin\Release\netstandard2.0\JiuFu.Entities.deps.json
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\bin\Release\netstandard2.0\JiuFu.Entities.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\bin\Release\netstandard2.0\JiuFu.Entities.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\bin\Release\netstandard2.0\JiuFu.UserAndRole.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\bin\Release\netstandard2.0\JiuFu.UserAndRole.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.Entities\obj\Release\netstandard2.0\JiuFu.Entities.pdb

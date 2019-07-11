@@ -1,0 +1,51 @@
+﻿@model JiuFu.Entities.Scenic
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详细页</title>
+    <link rel="stylesheet" href="~/css/bootstarpcss/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/bootstarpcss/EPage.css">
+</head>
+<body>
+    <div class="container" style="height:100%">
+        <div class="row" id="div-header">
+            <div class="col-xs-3">
+                <a class="btn btn-default" asp-action="Index" role="button">返回</a>
+            </div>
+            <div class="col-xs-6">
+                <p style="text-align:center;font-size:20px;">景点</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div id="awsl" class="col-xs-12">
+                <a href="#" class="thumbnail">
+                    <img src=" @Model.picture" alt="...">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-xs-10">
+                    <h4 style="padding-left:40px">地点: @Model.Position</h4>
+                </div>
+                <div class="col-xs-10">
+                    <h4 style="padding-left:40px">开放时间: @Model.Date</h4>
+                </div>
+                <div class="col-xs-10">
+                    <h4 style="padding-left:40px">
+                        详细: @Model.Detail
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="~/css/bootstarpcss/jquery-1.12.4.js"></script>
+    <script src="~/css/bootstarpcss/bootstrap.min.js"></script>
+</body>

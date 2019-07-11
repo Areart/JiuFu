@@ -1,0 +1,14 @@
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.ViewModels.deps.json
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.ViewModels.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.ViewModels.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.Entities.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.UserAndRole.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.Entities.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\bin\Release\netstandard2.0\JiuFu.UserAndRole.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.ViewModels\obj\Release\netstandard2.0\JiuFu.ViewModels.pdb

@@ -1,0 +1,129 @@
+﻿@model IEnumerable<OrderViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "";
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>个人</title>
+    <link rel="stylesheet" href="~/css/bootstarpcss/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstarpcss/FoodStyle.css" />
+</head>
+
+<body>
+    <div class="container" style="height:100%">
+        <div class="row" id="div-header" style="position:fixed">
+            <div class="col-xs-3">
+                <a class="btn btn-default" asp-controller="Home" asp-action="Index">返回</a>
+            </div>
+            <div class="col-xs-8">
+                <form asp-controller="Foods" asp-action="Index">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="SearchString" placeholder="搜索">
+                        <span class="input-group-btn">
+                            <input class="btn btn-default" type="submit" value="Go！" />
+                        </span>
+                    </div><!-- /input-group -->
+                </form>
+
+            </div>
+        </div>
+        <div class="row" style="height: 100%;width:100%; position:fixed;margin-top:54px">
+            <div class="col-xs-4" style="height: 100%;padding:0;">
+                <div class="navbar-example  navbar-default navbar-collapse bs-js-navbar-scrollspy" style="width:100%;padding:0;">
+                    <ul id="foodclass" class="nav navbar-nav">
+                        <li><a href="#dc">点餐订单</a></li>
+                        <li><a href="#sw">送物订单</a></li>
+                        <li><a href="#zb">周边订单</a></li>
+                        <li><a href="#bj">保洁订单</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-xs-8" style="overflow-x: hidden;height: 100%;padding-bottom: 600px; " data-spy="scroll"
+                 data-target=".navbar-example">
+                <div id="dc">
+
+                    @foreach (var item in Model)
+                    {
+                        if (@item.CLass == "食物"&&item.OrderStatus==true)
+                        {
+                        <div class="row" id="main-rigth">
+                            <a asp-action="Details" asp-route-id="@item.Id">
+                                <div class="col-xs-5">
+                                    <div class="thumbnail">
+                                        <img src="@Html.DisplayFor(modelItem => item.picture)" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
+                                    <h4>￥@Html.DisplayFor(modelItem => item.Peice)</h4>
+                                </div>
+                            </a>
+                        </div>
+                        }
+
+                    }
+                </div>
+
+                <div id="sw">
+
+                    @foreach (var item in Model)
+                    {
+                        if (@item.CLass == "生活用品"&&item.OrderStatus == true)
+                        {
+                    <div class="row" id="main-rigth">
+                        <a asp-action="Details" asp-route-id="@item.Id">
+                            <div class="col-xs-5">
+                                <div class="thumbnail">
+                                    <img src="@Html.DisplayFor(modelItem => item.picture)" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
+                                <h4>￥@Html.DisplayFor(modelItem => item.Peice)</h4>
+                            </div>
+                        </a>
+                    </div>
+                        }
+
+                    }
+                </div>
+                
+                  <div id="zb">
+
+                    @foreach (var item in Model)
+                    {
+                        if (@item.CLass == "周边商品"&&item.OrderStatus == true)
+                        {
+                      <div class="row" id="main-rigth">
+                          <a asp-action="Details" asp-route-id="@item.Id">
+                              <div class="col-xs-5">
+                                  <div class="thumbnail">
+                                      <img src="@Html.DisplayFor(modelItem => item.picture)" alt="...">
+                                  </div>
+                              </div>
+                              <div class="col-xs-7">
+                                  <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
+                                  <h4>￥@Html.DisplayFor(modelItem => item.Peice)</h4>
+                              </div>
+                          </a>
+                      </div>
+                        }
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="~/css/bootstarpcss/jquery-1.12.4.js"></script>
+    <script src="~/css/bootstarpcss/bootstrap.min.js"></script>
+</body>
+

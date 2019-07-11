@@ -1,0 +1,54 @@
+﻿@model JiuFu.Entities.Commodity
+
+@{
+    ViewData["Title"] = "CommodityCreate";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+<h4>周边添加</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CommodityCreate"   enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">名称</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label">价格</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Detail" class="control-label">简介</label>
+                <input asp-for="Detail" class="form-control" />
+                <span asp-validation-for="Detail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaleState" class="control-label">状态</label>
+                <select asp-for="SaleState" class="form-control">
+                    <option>售卖中</option>
+                    <option>售罄</option>
+                </select>
+                <span asp-validation-for="SaleState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="btn green fileinput-button">
+                    <i class="fa fa-plus fa fa-white"></i>
+                    <span>图片</span>
+                    <input asp-for="picture" type="file" name="picture" multiple>
+                </span>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="添加" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="CommodityIndex">返回</a>
+</div>
+

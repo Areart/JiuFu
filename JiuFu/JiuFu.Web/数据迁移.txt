@@ -1,0 +1,2 @@
+Add-Migration -Name "JiuFu001" -Project "JiuFu.ORM"  -StartupProject "JiuFu.Web"
+Update-Database -Migration "JiuFu001"  -Project "JiuFu.ORM"  -StartupProject "JiuFu.Web"

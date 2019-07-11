@@ -1,0 +1,9 @@
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\bin\Release\netstandard2.0\JiuFu.UserAndRole.deps.json
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\bin\Release\netstandard2.0\JiuFu.UserAndRole.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\bin\Release\netstandard2.0\JiuFu.UserAndRole.pdb
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\obj\Release\netstandard2.0\JiuFu.UserAndRole.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\obj\Release\netstandard2.0\JiuFu.UserAndRole.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\obj\Release\netstandard2.0\JiuFu.UserAndRole.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\obj\Release\netstandard2.0\JiuFu.UserAndRole.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\obj\Release\netstandard2.0\JiuFu.UserAndRole.dll
+C:\Users\Administrator\Source\Repos\05JiuFu\JiuFu\JiuFu.UserAndRole\obj\Release\netstandard2.0\JiuFu.UserAndRole.pdb

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<JiuFu.ViewModels.PersonnelVM>
+
+@{
+    ViewData["Title"] = "PersonnelIndex";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>员工管理</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               名字
+            </th>
+            <th>
+                性别
+            </th>
+            <th>
+               生日
+            </th>
+            <th>
+                手机号
+            </th>            
+            <th>
+               房间号
+            </th>                  
+            <th>
+               邮箱
+            </th>        
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>               
+                @if (item.Sex)
+                {
+                    <p>男</p>
+                }
+                else
+                {
+                    <p>女</p>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNumber)
+            </td>            
+            <td>
+                @Html.DisplayFor(modelItem => item.floor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a asp-action="PersonnelEdit" asp-route-id="@item.Id">修改</a> |
+                <a asp-action="PersonnelDetails" asp-route-id="@item.Id">详细</a> |
+                <a asp-action="PersonnelDelete" asp-route-id="@item.Id">删除</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

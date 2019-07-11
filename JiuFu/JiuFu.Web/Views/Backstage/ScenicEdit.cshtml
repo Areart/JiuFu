@@ -1,0 +1,54 @@
+﻿@model JiuFu.Entities.Scenic
+
+@{
+    ViewData["Title"] = "ScenicEdit";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>景点修改</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ScenicEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">名称</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Position" class="control-label">位置</label>
+                <input asp-for="Position" class="form-control" />
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label">开放时间</label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Detail" class="control-label">简介</label>
+                <input asp-for="Detail" class="form-control" />
+                <span asp-validation-for="Detail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="btn green fileinput-button">
+                    <i class="fa fa-plus fa fa-white"></i>
+                    <span>图片</span>
+                    <input asp-for="picture" type="file" name="picture" multiple>
+                </span>
+                <span class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="保存" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ScenicIndex">返回</a>
+</div>
+

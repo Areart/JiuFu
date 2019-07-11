@@ -1,0 +1,125 @@
+
+html {
+    height: 120%;
+    width: 100%;
+    overflow:hidden;
+}  
+body {
+    margin: 0;
+    height: 100%;
+    overflow:hidden;
+    background-color:#E3FDFD;
+}  
+#div-header{
+    background: #eee;
+    padding-top: 5px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+#main-rigth{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#main-rigth1{
+    margin-top: 100px;
+    margin-left: -92px;
+    }
+#main-rigth2{
+    margin-top: 100px;
+    margin-left: -100px;
+    }
+#main-rigth3{
+    margin-top: 50px;
+    margin-left: 20px;
+    }
+#main-rigth4{
+    margin-top: 10px;
+    margin-left: 20px;
+    }
+.thumbnail{
+    border: none;
+}
+#awsl {
+    margin-top: 30px;
+}
+#awsl1 {
+    color: brown;
+    margin-top: 30px;
+    font-weight: 600;
+}
+#awsl2 {
+    width: 90px;
+    height: 40px;
+    background-color: #169BD5;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#songwu {
+    margin-right: 30px;
+}
+#main-left{
+    background: #eee;
+    height: 100%;
+    padding: 0;
+}
+#main-left ul{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+#main-left ul li{
+    border: 0;    
+    border-radius: 0;
+    background: #eee;
+
+}
+#main-left ul li:nth-child(1){
+  
+    background: #fff;
+ 
+}
+#tup {
+    margin-top: -50px;
+    margin-left: 70px;
+}
+#tup1 {
+    margin-top: -33px;
+    margin-left: 60px;
+}
+#tup2 {
+    margin-left: -20px;
+    margin-top: 10px;
+}
+#tup3 {
+    margin-left: 120px;
+    margin-top: -29px;
+}
+.daxiao {
+    width: 100px;
+}
+#anniu1 {
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: #169BD5;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+#anniu2 {
+    width: 80px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #169BD5;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<JiuFu.Entities.Scenic>
+
+@{
+    ViewData["Title"] = "ScenicIndex";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<div class="inbox-head col-lg-12">
+    <h3 class="input-text">景点管理</h3>
+    <form asp-action="ScenicIndex" class="pull-right position">
+        <div class="input-append inner-append">
+            <input type="text" class="sr-input" name="SearchString" placeholder="搜索">
+            <button class="btn sr-btn append-btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                名称
+            </th>
+            <th>
+                位置
+            </th>
+            <th>
+                开放时间
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    <a asp-action="ScenicEdit" asp-route-id="@item.Id">修改</a> |
+                    <a asp-action="ScenicDetails" asp-route-id="@item.Id">详细</a> |
+                    <a asp-action="ScenicDelete" asp-route-id="@item.Id">删除</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

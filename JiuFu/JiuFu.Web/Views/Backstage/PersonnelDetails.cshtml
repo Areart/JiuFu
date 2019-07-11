@@ -1,0 +1,67 @@
+﻿@model JiuFu.UserAndRole.ApplicationUser
+
+@{
+    ViewData["Title"] = "PersonnelDetails";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>员工信息</h1>
+
+<div>
+   
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+           用户名
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+           性别
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sex)
+        </dd>
+        <dt class = "col-sm-2">
+           生日
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+        <dt class = "col-sm-2">
+           手机号
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MobileNumber)
+        </dd>
+        <dt class = "col-sm-2">
+           头像
+        </dt>
+        <dd class = "col-sm-10">
+           <img  src="@Html.DisplayFor(model => model.AvatarPath)"/> 
+        </dd>
+        <dt class = "col-sm-2">
+          楼层
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.floor)
+        </dd>
+        <dt class = "col-sm-2">
+            登陆名
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserName)
+        </dd>        
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>       
+    </dl>
+</div>
+<div>
+    <a asp-action="PersonnelEdit" asp-route-id="@Model.Id">修改</a> |
+    <a asp-action="PersonnelIndex">返回</a>
+</div>

@@ -1,0 +1,48 @@
+﻿@model JiuFu.Entities.Entertainment
+
+@{
+    ViewData["Title"] = "EntertainmentsDetails";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>娱乐详细</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+           名称
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+           位置
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+        <dt class = "col-sm-2">
+           开放时间
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class = "col-sm-2">
+           简介
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Detail)
+        </dd>
+        <dt class = "col-sm-2">
+           图片
+        </dt>
+        <dd class = "col-sm-10">
+          <img src=" @Html.DisplayFor(model => model.picture)"/> 
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EntertainmentsEdit" asp-route-id="@Model.Id">修改</a> |
+    <a asp-action="EntertainmentsIndex">返回</a>
+</div>

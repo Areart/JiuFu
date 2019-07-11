@@ -1,0 +1,49 @@
+﻿@model JiuFu.Entities.Commodity
+
+@{
+    ViewData["Title"] = "CommodityDetails";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h1>详细</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            名称
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+           价格
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+           简介
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Detail)
+        </dd>
+        <dt class = "col-sm-2">
+           状态
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SaleState)
+        </dd>
+        <dt class = "col-sm-2">
+          图片
+        </dt>
+        <dd class = "col-sm-10">
+        <img src="@Html.DisplayFor(model => model.picture)"/>    
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="CommodityEdit" asp-route-id="@Model.Id">修改</a> |
+    <a asp-action="CommodityIndex">返回</a>
+</div>
